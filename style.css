@@ -1,0 +1,12 @@
+ /* #main-content{
+    background-image: url(resourse/images/background.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+     background-position: center;
+     
+ } */
+ .header{
+    font-size: 5rem;
+    font-weight: 700; 
+ }

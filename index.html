@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = 'light'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Class Pro</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class=" ">
+    <main id="main-content" class="min-h-screen bg-[#010313] relative">
+
+        <img class="h-screen w-[40%] absolute transform translate-x-[75%]  " src="resourse/images/background.png" alt="">
+
+        <section id="home" class="  flex flex-col justify-center min-h-screen  ">
+            <div class="text-white flex flex-col justify-center items-center z-40 gap-3 "> 
+                <h1 class="header font-anton uppercase">ALPHABET CLASH</h1>
+                <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play </p>
+                <button onclick="play()" class="btn btn-white">Play Now </button>  
+             </div> 
+        </section>
+
+        <section id="play-now" class="flex flex-col justify-center min-h-screen hidden "> 
+
+            <div class=" z-40 flex flex-col justify-center items-center">
+                 
+                <div class="artboard artboard-horizontal phone-6  mb-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]"> 
+                    <div class="flex justify-center    ">
+                        <p class="bg-[#2F2941] max-w-96 text-white px-6 pb-3 rounded-b-xl">Don't watch keyboard  while playing...</p>
+                    </div>
+                    <div class="flex justify-center items-center h-full">
+                        <p id="displays" class="text-black text-9xl font-bold uppercase">Y</p>
+                    </div>
+                </div>
+              
+                 <div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="q" class="kbd ">q</kbd>
+                        <kbd id="w" class="kbd">w</kbd>
+                        <kbd id="e" class="kbd">e</kbd>
+                        <kbd id="r" class="kbd">r</kbd>
+                        <kbd id="t" class="kbd">t</kbd>
+                        <kbd id="y" class="kbd">y</kbd>
+                        <kbd id="u" class="kbd">u</kbd>
+                        <kbd id="i" class="kbd">i</kbd>
+                        <kbd id="o" class="kbd">o</kbd>
+                        <kbd id="p" class="kbd">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="a" class="kbd">a</kbd>
+                        <kbd id="s" class="kbd">s</kbd>
+                        <kbd id="d" class="kbd">d</kbd>
+                        <kbd id="f" class="kbd">f</kbd>
+                        <kbd id="g" class="kbd">g</kbd>
+                        <kbd id="h" class="kbd">h</kbd>
+                        <kbd id="j" class="kbd">j</kbd>
+                        <kbd id="k" class="kbd">k</kbd>
+                        <kbd id="l" class="kbd">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="z" class="kbd">z</kbd>
+                        <kbd id="x" class="kbd">x</kbd>
+                        <kbd id="c" class="kbd">c</kbd>
+                        <kbd id="v" class="kbd">v</kbd>
+                        <kbd id="b" class="kbd">b</kbd>
+                        <kbd id="n" class="kbd">n</kbd>
+                        <kbd id="m" class="kbd">m</kbd>
+                        <kbd id="/" class="kbd">/</kbd>
+                      </div>
+                 </div>
+
+                 <div class="mt-11 flex justify-between w-3/4">
+                    <div class="btn rounded-[60px] bg-purple-400 text-white py-3">
+                        <span>life</span>
+                        <i class="fa fa-gratipay" aria-hidden="true"></i>
+                        <span>1</span>
+                    </div>
+                    <div class="btn rounded-[60px] bg-purple-700 text-white py-3">
+                        <span>Score</span>
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                        <span>1</span>
+                    </div>
+                 </div>
+            </div>
+
+        </section>
+
+        <section class="score flex flex-col justify-center min-h-screen hidden">
+            <div class="text-white z-40 text-center space-y-6   "> 
+                     <div class="bg-[#FFFFFF33] flex flex-col justify-center items-center lg:ml-[35%] rounded-lg max-w-[350px] max-h-[300px] py-10">
+                        <h1 class="text-6xl">
+                            <span class="font-extrabold">Score : </span>
+                            <span>14</span>
+                        </h1>
+                        <button class="btn mt-9">Play Again</button>
+                        <p class="  mt-4">Practice will make you Pro</p>
+                     </div> 
+            </div>
+        </section>  
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
