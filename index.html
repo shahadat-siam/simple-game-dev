@@ -76,28 +76,29 @@
 
                  <div class="mt-11 flex justify-between w-3/4">
                     <div class="btn rounded-[60px] bg-purple-400 text-white py-3">
-                        <span>life</span>
-                        <i class="fa fa-gratipay" aria-hidden="true"></i>
-                        <span>1</span>
+                        <span>life : </span>
+                        <img src="resourse/images/heart.svg" alt="">
+                        <span id="current-life">6</span>
                     </div>
                     <div class="btn rounded-[60px] bg-purple-700 text-white py-3">
-                        <span>Score</span>
-                        <i class="fa fa-usd" aria-hidden="true"></i>
-                        <span>1</span>
+                        <span>Score : </span>
+                        <img src="resourse/images/dollar.svg" alt="">
+                        <span id="current-score">0</span>
                     </div>
                  </div>
-            </div>
+            </div> 
 
         </section>
 
-        <section class="score flex flex-col justify-center min-h-screen hidden">
+        <section id="final-score" class="flex flex-col justify-center min-h-screen hidden">
             <div class="text-white z-40 text-center space-y-6   "> 
                      <div class="bg-[#FFFFFF33] flex flex-col justify-center items-center lg:ml-[35%] rounded-lg max-w-[350px] max-h-[300px] py-10">
+                       <h1 class="text-2xl">Game over!</h1>
                         <h1 class="text-6xl">
                             <span class="font-extrabold">Score : </span>
-                            <span>14</span>
+                            <span id="last-score">14</span>
                         </h1>
-                        <button class="btn mt-9">Play Again</button>
+                        <button onclick="playAgain()" id="play-again" class="btn mt-9">Play Again</button>
                         <p class="  mt-4">Practice will make you Pro</p>
                      </div> 
             </div>
